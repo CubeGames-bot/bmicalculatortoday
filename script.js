@@ -20,14 +20,14 @@ function calculateBMI() {
         status = "Normal";
         description = "Your weight is within the normal range. Keep up the good work!";
         position = 25;
-         img.src = "FIT.png";
+         img.src = "fit.png";
     }
 
     else if (bmi < 30) {
         status = "Overweight";
         description = "Your weight is above the recommended range. Regular exercise and healthy eating may help improve your BMI.";
          position = 42;
-         img.src = "Gemoi.png";
+         img.src = "gemoi.png";
     }
 
     else if (bmi < 35) {
