@@ -1,0 +1,108 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Pliant:ital,wght@0,100..900;1,100..900&display=swap');
+        </style>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BMI Calculator</title>
+         <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <script src="script.js"></script>
+      <div class="app-container">
+      <header>
+        <nav class="navbar">
+          <h2 class="logo-text">BMI Calculator</h2>
+          <h2 class="deco">_______</h2>
+         </a>
+        </nav>
+</header>
+<div class="main-content">
+  <div class="container">
+    <div class="input-icon">
+      <i class="fa fa-address-book icon" aria-hidden="true" ></i>
+    </div>
+  <h2 class="title">Enter Your Details</h2>
+  <p class="description">Fill in your weight and height to calculate your BMI</p>
+  <div class="input-box">
+  <label for="weight">Weight (kg):</label>
+    <input type="number" id="weight">
+    </div>
+    <div class="input-box">
+    <label for="height">Height (cm):</label>
+    <input type="number" id="height" >
+  </div>
+  <button onclick="calculateBMI()">Calculate</button>
+</div>
+  <div class="result-box">
+    <div class="image-box">
+      <img id="bmiImage" width="200">
+    </div>
+    <div class=" result icon">
+    <i class="fa-solid fa-calculator icon2"></i>
+    </div>
+  <h2 class="title-result">Your Result</h2>
+  <div class="result-container">
+    <h1 id="bmi-number">--</h1>
+  </div>
+    <h2 class="category-text">BMI</h2>
+    <div class="bmi-scale">
+    <div class="pointer" id="pointer"></div>
+
+    <div class="scale-bar">
+        <div class="u"></div>
+        <div class="n"></div>
+        <div class="ow"></div>
+        <div class="o1"></div>
+        <div class="o2"></div>
+        <div class="o3"></div>
+    </div>
+
+    <div class="scale-labels">
+        <span>Under</span>
+        <span>Normal</span>
+        <span>Over</span>
+        <span>Obese I</span>
+        <span>Obese II</span>
+        <span>Obese III</span>
+    </div>
+</div>
+    
+    <div class="output" id="Output">
+       <div class="warning-icon">!
+       </div>
+       <div class="result-text">
+      <h2 class="show-result" id="bmi-status">Waiting...</h2>
+      <p class="bmi-description" id="bmi-description"></p>
+    
+       </div>
+    </div>
+</div>
+</div>
+      </div>
+      <div class="info-section">
+         <div class="target-icon">
+             <i class="fa-solid fa-bullseye icon3"></i>
+             </div>
+             <div class="target-output">
+             <h2 class= "target-weight" id="target-weight">--</h2>
+             </div>
+             <h2 class="section1">weight to lose</h2>
+             <div class="infomaintitle">
+        <h2 class="info-title">Target</h2>
+        </div>
+        <div class="targetdescbox">
+        <p class="info-description">Body Mass Index (BMI) helps estimate whether your weight is in a healthy range based on your height. To lose weight in a healthy way, focus on a balanced diet, regular exercise, proper sleep, and staying hydrated.</p>
+        </div>
+        <div class="targetbox">
+          <img src="FIT.png" alt="Stickman" id="target">
+          </div>
+      </div>
+</body>
+</html>
