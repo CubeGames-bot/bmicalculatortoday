@@ -23,10 +23,9 @@ html {
     color: white;
 }
 .container {
-    width: 90%;
     max-width: 400px;
     min-height: 400px;
-    margin: 0 auto;
+    margin: 30px;
     padding: 20px;
     background-color: rgb(255, 255, 255);
     border-radius: 25px;
