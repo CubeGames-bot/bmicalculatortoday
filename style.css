@@ -24,9 +24,10 @@ html {
 }
 .container {
     max-width: 400px;
-    min-height: 400px;
+    min-height: 100px;
+    max-height: 360px;
     left: 50px;
-    margin: 30px;
+    margin: 70px;
     padding: 20px;
     background-color: rgb(255, 255, 255);
     border-radius: 25px;
@@ -34,8 +35,8 @@ html {
 }
 .result-box {
     align-items: center;
-    width: 550px;
-    height: 400px;
+    max-width: 550px;
+    max-height: 400px;
     margin: 50px;
     padding: 20px;
     background-color: rgb(255, 255, 255);
@@ -87,7 +88,6 @@ button {
 .main-content{
     display: flex;
     justify-content: center;
-    justify-items: center;
     gap: 20px;
     margin-top: 50px;
     flex-wrap: wrap;
@@ -441,5 +441,9 @@ input[type="number"]::-webkit-inner-spin-button {
     position: relative;
     top: -35px;
     align-items: center;
+    justify-content: center;
+}
+.diplay1 {
+    display: flex;
     justify-content: center;
 }
